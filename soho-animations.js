@@ -3,7 +3,12 @@
 // Smooth scroll animations and interactions
 class SohoAnimations {
     constructor() {
-        this.init();
+        // Wait for DOM to be ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => this.init());
+        } else {
+            this.init();
+        }
     }
 
     init() {
@@ -95,8 +100,11 @@ class SohoAnimations {
     }
 
     setupNavigationAnimations() {
-        const nav = document.querySelector('.nav-soho');
-        const navLinks = document.querySelectorAll('.nav-soho-link');
+        const nav = document.querySelector('.header-navigation') || document.querySelector('.nav-soho');
+        const navLinks = document.querySelectorAll('.nav-item') || document.querySelectorAll('.nav-soho-link');
+        
+        // Check if nav exists before adding scroll effect
+        if (!nav) return;
         
         // Navbar scroll effect
         let lastScrollY = window.scrollY;
@@ -116,15 +124,17 @@ class SohoAnimations {
         });
 
         // Active link highlighting
-        navLinks.forEach(link => {
-            link.addEventListener('mouseenter', () => {
-                link.style.transform = 'translateY(-2px)';
+        if (navLinks.length > 0) {
+            navLinks.forEach(link => {
+                link.addEventListener('mouseenter', () => {
+                    link.style.transform = 'translateY(-2px)';
+                });
+                
+                link.addEventListener('mouseleave', () => {
+                    link.style.transform = 'translateY(0)';
+                });
             });
-            
-            link.addEventListener('mouseleave', () => {
-                link.style.transform = 'translateY(0)';
-            });
-        });
+        }
     }
 
     setupFormAnimations() {

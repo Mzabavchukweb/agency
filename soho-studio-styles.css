@@ -288,9 +288,8 @@ ol {
     inset-inline: 0;
     z-index: 1000;
     height: var(--header-height);
-    background: rgba(255, 255, 255, 0.92);
-    backdrop-filter: saturate(160%) blur(18px);
-    border-bottom: 1px solid rgba(17, 17, 17, 0.06);
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
@@ -315,11 +314,12 @@ ol {
     font-size: 1.5rem;
     font-family: var(--font-display);
     letter-spacing: 0.45rem;
+    color: #000000;
 }
 
 .logo-sub {
     font-size: 0.65rem;
-    color: var(--color-muted-light);
+    color: #000000;
     letter-spacing: 0.35rem;
 }
 
@@ -342,7 +342,7 @@ ol {
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.12rem;
-    color: var(--color-muted-light);
+    color: #000000;
     padding-block: 0.3rem;
     transition: color var(--transition-base);
 }
@@ -354,14 +354,14 @@ ol {
     inset-block-end: -0.4rem;
     width: 0;
     height: 1px;
-    background: var(--color-primary);
+    background: #000000;
     transition: width var(--transition-base);
 }
 
 .nav-item:hover,
 .nav-item:focus-visible,
 .nav-item.active {
-    color: var(--color-primary);
+    color: #333333;
 }
 
 .nav-item:hover::after,
@@ -386,7 +386,7 @@ ol {
     width: 24px;
     height: 2px;
     border-radius: 1px;
-    background: var(--color-primary);
+    background: #000000;
     transition: transform var(--transition-base), opacity var(--transition-base);
 }
 
@@ -1630,9 +1630,8 @@ body {
     position: absolute;
         inset-inline: 0;
         inset-block-start: var(--header-height);
-        background: rgba(255, 255, 255, 0.96);
-        backdrop-filter: blur(18px);
-        border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+        background: #ffffff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .header-navigation.active {
