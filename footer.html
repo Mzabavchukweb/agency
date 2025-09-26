@@ -1,0 +1,452 @@
+<!-- Footer Styles - IDENTYCZNE JAK NA STRONIE GŁÓWNEJ -->
+<style>
+    /* ===== GLOBAL CTA STYLES ===== */
+    .soho-global-cta {
+        background: #1a1a1a;
+        color: white;
+        padding: 80px 0;
+    }
+
+    .soho-global-cta-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .soho-global-cta-title {
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 300;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .soho-global-cta-subtitle {
+        font-size: clamp(1.2rem, 3vw, 1.8rem);
+        font-weight: 300;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .soho-global-cta-subtitle em {
+        font-style: italic;
+        color: #ccc;
+    }
+
+    .soho-global-cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .soho-global-cta-button {
+        display: inline-block;
+        padding: 16px 32px;
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+    }
+
+    /* ===== FOOTER - SOHO STUDIO STYLE ===== */
+    .footer-soho-studio {
+        background: #1a1a1a;
+        color: white;
+        padding: 60px 0 40px;
+        margin-top: 0;
+        clear: both;
+    }
+
+    .footer-soho-studio-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .footer-soho-studio-main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer-logo-soho {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-logo-main {
+        font-family: var(--soho-font-display);
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+        color: white;
+    }
+
+    .footer-logo-sub {
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: lowercase;
+        letter-spacing: 0.1em;
+        color: white;
+        opacity: 0.7;
+        margin-bottom: 1rem;
+    }
+
+    .footer-logo-description {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.6;
+        color: white;
+        opacity: 0.75;
+        max-width: 280px;
+        margin-top: 0.75rem;
+        letter-spacing: 0.3px;
+    }
+
+    .footer-links-soho {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .footer-section-title {
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin: 0 0 1.75rem;
+        color: white;
+        opacity: 0.9;
+    }
+
+    .footer-links-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .footer-links-list a {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 300;
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        opacity: 0.7;
+        letter-spacing: 0.3px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .footer-links-list a:hover {
+        opacity: 1;
+        transform: translateX(4px);
+        letter-spacing: 0.8px;
+    }
+
+    .footer-contact-soho {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .footer-contact-link {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 300;
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        opacity: 0.7;
+        letter-spacing: 0.3px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .footer-contact-link:hover {
+        opacity: 1;
+        transform: translateX(4px);
+        letter-spacing: 0.8px;
+    }
+
+    .footer-social {
+        margin-top: 2.5rem;
+    }
+
+    .footer-social-title {
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin: 0 0 1.25rem;
+        color: white;
+        opacity: 0.9;
+    }
+
+    .footer-social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-social-link {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 300;
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        opacity: 0.7;
+        display: inline-block;
+        position: relative;
+        letter-spacing: 0.5px;
+    }
+
+    .footer-social-link:hover {
+        opacity: 1;
+        transform: translateX(8px);
+        letter-spacing: 1px;
+    }
+
+    .footer-social-link span {
+        position: relative;
+        display: inline-block;
+    }
+
+    .footer-social-link span::before {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: white;
+        transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .footer-social-link:hover span::before {
+        width: 100%;
+    }
+
+    .footer-soho-studio-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 2rem;
+    }
+
+    .footer-bottom-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-copyright {
+        font-size: 11px;
+        font-weight: 300;
+        color: white;
+        opacity: 0.5;
+        margin: 0;
+        letter-spacing: 0.2px;
+    }
+
+    .footer-legal-soho {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .legal-link-soho {
+        color: white;
+        text-decoration: none;
+        font-size: 11px;
+        font-weight: 300;
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        opacity: 0.5;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+    }
+
+    .legal-link-soho:hover {
+        opacity: 0.8;
+        letter-spacing: 0.5px;
+    }
+
+    /* ===== RESPONSIVE STYLES ===== */
+    @media (max-width: 1024px) {
+        .footer-soho-studio-main {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+        
+        .footer-links-soho {
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .footer-logo-description {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer-soho-studio-container {
+            padding: 0 1rem;
+        }
+        
+        .footer-soho-studio-main {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .footer-links-soho {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .footer-bottom-content {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .footer-legal-soho {
+            justify-content: center;
+        }
+
+        .footer-social-links {
+            align-items: center;
+        }
+
+        .soho-global-cta-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .soho-global-cta-button {
+            width: 200px;
+            text-align: center;
+        }
+
+        .footer-logo-description {
+            text-align: center;
+            margin: 0.5rem auto 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .footer-soho-studio {
+            padding: 40px 0 30px;
+        }
+
+        .footer-soho-studio-container {
+            padding: 0 0.5rem;
+        }
+
+        .footer-links-soho {
+            gap: 1.5rem;
+        }
+
+        .footer-social-links {
+            gap: 0.5rem;
+        }
+
+        .footer-legal-soho {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+</style>
+
+<!-- Global CTA removed per request -->
+
+<!-- Footer - Soho Studio Style -->
+<footer class="footer-soho-studio" role="contentinfo">
+    <div class="footer-soho-studio-container">
+        <div class="footer-soho-studio-content">
+            <div class="footer-soho-studio-main">
+                <div class="footer-logo-soho">
+                    <h3 class="footer-logo-main">NONAME</h3>
+                    <p class="footer-logo-sub">studio</p>
+                    <p class="footer-logo-description">
+                        Agencja kreatywna specjalizująca się w brandingu, marketingu cyfrowym oraz eventach.
+                    </p>
+                </div>
+                
+                <div class="footer-links-soho">
+                    <div class="footer-section-soho">
+                        <h4 class="footer-section-title">NAWIGACJA</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="/index.html">Strona główna</a></li>
+                            <li><a href="/pages/realizacje.html">Realizacje</a></li>
+                            <li><a href="/pages/poznaj-nas.html">O nas</a></li>
+                            <li><a href="/pages/oferta.html">Oferta</a></li>
+                            <li><a href="/pages/kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section-soho">
+                        <h4 class="footer-section-title">USŁUGI</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="/pages/oferta.html#branding">Branding</a></li>
+                            <li><a href="/pages/oferta.html#marketing">Marketing cyfrowy</a></li>
+                            <li><a href="/pages/oferta.html#eventy">Eventy</a></li>
+                            <li><a href="/pages/oferta.html#grafika">Grafika</a></li>
+                            <li><a href="/pages/oferta.html#social-media">Social Media</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-contact-soho">
+                    <h4 class="footer-section-title">KONTAKT</h4>
+                    <div class="footer-contact-info">
+                        <a href="mailto:hello@noname.agency" class="footer-contact-link" aria-label="Wyślij email">
+                            hello@noname.agency
+                        </a>
+                        <a href="tel:+48123456789" class="footer-contact-link" aria-label="Zadzwoń">
+                            +48 123 456 789
+                        </a>
+                        <div class="footer-contact-link">
+                            Warszawa, Polska
+                        </div>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h5 class="footer-social-title">ŚLEDŹ NAS</h5>
+                        <div class="footer-social-links">
+                            <a href="https://instagram.com/noname.agency" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-soho-studio-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">&copy; 2025 NONAME Studio. Wszystkie prawa zastrzeżone.</p>
+                    <div class="footer-legal-soho">
+                        <a href="#polityka-prywatnosci" class="legal-link-soho">Polityka prywatności</a>
+                        <a href="#regulamin" class="legal-link-soho">Regulamin</a>
+                        <a href="#cookies" class="legal-link-soho">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

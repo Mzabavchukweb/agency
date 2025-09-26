@@ -1,0 +1,27 @@
+# Large media files - use Git LFS or external storage
+NONAME portfolio/
+*.MOV
+*.mov
+*.MP4
+*.mp4
+*.JPG
+*.jpg
+*.PNG
+*.png
+*.HEIC
+*.heic
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Node modules (if any)
+node_modules/
+
+# Build files
+dist/
+build/

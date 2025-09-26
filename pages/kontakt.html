@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NONAME Studio — kontakt: rozpocznij swój projekt już dziś.">
+    
+    <meta name="author" content="NONAME Studio">
+    <title>Kontakt — NONAME Studio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../soho-studio-styles.css?v=1.0.0">
+</head>
+<body>
+    <!-- Unified Header -->
+    <header class="main-header">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <a href="../index.html" class="logo-link">
+                    <span class="logo-main">NONAME</span>
+                    <span class="logo-sub">studio</span>
+                </a>
+            </div>
+            
+            <nav class="header-navigation" role="navigation" aria-label="Nawigacja główna">
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-item">Home</a></li>
+                    <li><a href="realizacje.html" class="nav-item">Realizacje</a></li>
+                    <li><a href="poznaj-nas.html" class="nav-item">Poznaj nas</a></li>
+                    <li><a href="oferta.html" class="nav-item">Oferta</a></li>
+                    <li><a href="kontakt.html" class="nav-item active" aria-current="page">Kontakt</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="kontakt.html" class="cta-button">Rozpocznij projekt</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="app" role="main">
+        <!-- Sekcja hero kontakt - Soho Studio Style -->
+        <section class="kontakt-hero-soho-studio section-spacing">
+            <div class="kontakt-hero-soho-studio-container">
+                <div class="kontakt-badge">
+                    <span class="badge-text">DZIAŁAMY</span>
+                </div>
+                <h1 class="kontakt-main-title">
+                    Zacznijmy współpracę <em>dzisiaj</em>
+                </h1>
+                <div class="kontakt-description">
+                    <p class="description-text">
+                        Zacznijmy od rozmowy – poznamy Was i potrzeby marki, a potem zaproponujemy najlepszą drogę działania.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-form-wrapper">
+                    <div class="contact-info">
+                        <h2>Skontaktuj się z nami</h2>
+                        <p>Masz pytania? Chcesz rozpocząć projekt? Napisz do nas!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                            <h3>E-mail</h3>
+                                <a href="mailto:hello@noname.agency">hello@noname.agency</a>
+                            </div>
+                            <div class="contact-item">
+                            <h3>Telefon</h3>
+                                <a href="tel:+48123456789">+48 123 456 789</a>
+                            </div>
+                            <div class="contact-item">
+                            <h3>Adres</h3>
+                                <span>Warszawa, Polska</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Imię i nazwisko" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Firma (opcjonalnie)">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Wybierz usługę</option>
+                                <option value="branding">Branding</option>
+                                <option value="web-design">Web Design</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="event">Event Management</option>
+                                <option value="other">Inne</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Opisz swój projekt..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Scripts -->
+    <script type="module" src="../assets/js/components.js?v=2.0.6"></script>
+    <script type="module" src="../assets/js/app.js?v=2.0.6"></script>
+    <script src="../assets/js/contact-form.js?v=2.0.6"></script>
+    <script src="../soho-animations.js?v=1.0.0"></script>
+    
+    <!-- Mobile Navigation handled by components.js:initHeader() -->
+    
+    
+    
+    <!-- Footer - Soho Studio Style -->
+    <footer class="footer-soho-studio" role="contentinfo">
+        <div class="footer-soho-studio-container">
+            <div class="footer-soho-studio-content">
+                <div class="footer-soho-studio-main">
+                    <div class="footer-logo-soho">
+                        <h3 class="footer-logo-main">NONAME</h3>
+                        <p class="footer-logo-sub">studio</p>
+                        <p class="footer-logo-description">
+                            Agencja kreatywna specjalizująca się w brandingu, marketingu cyfrowym oraz eventach.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-links-soho">
+                        <div class="footer-section-soho">
+                            <h4 class="footer-section-title">NAWIGACJA</h4>
+                            <ul class="footer-links-list">
+                                <li><a href="/index.html">Strona główna</a></li>
+                                <li><a href="/pages/realizacje.html">Realizacje</a></li>
+                                <li><a href="/pages/poznaj-nas.html">O nas</a></li>
+                                <li><a href="/pages/oferta.html">Oferta</a></li>
+                                <li><a href="/pages/kontakt.html">Kontakt</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section-soho">
+                            <h4 class="footer-section-title">USŁUGI</h4>
+                            <ul class="footer-links-list">
+                                <li><a href="/pages/oferta.html#branding">Branding</a></li>
+                                <li><a href="/pages/oferta.html#marketing">Marketing cyfrowy</a></li>
+                                <li><a href="/pages/oferta.html#eventy">Eventy</a></li>
+                                <li><a href="/pages/oferta.html#grafika">Grafika</a></li>
+                                <li><a href="/pages/oferta.html#social-media">Social Media</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-contact-soho">
+                        <h4 class="footer-section-title">KONTAKT</h4>
+                        <div class="footer-contact-info">
+                            <a href="mailto:hello@noname.agency" class="footer-contact-link" aria-label="Wyślij email">
+                                hello@noname.agency
+                            </a>
+                            <a href="tel:+48123456789" class="footer-contact-link" aria-label="Zadzwoń">
+                                +48 123 456 789
+                            </a>
+                            <div class="footer-contact-link">
+                                Warszawa, Polska
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-soho-studio-bottom">
+                    <div class="footer-bottom-content">
+                        <p class="footeropyright">&copy; 2025 NONAME Studio. Wszystkie prawa zastrzeżone.</p>
+                        <div class="footer-legal-soho">
+                            <a href="#polityka-prywatnosci" class="legal-link-soho">Polityka prywatności</a>
+                            <a href="#regulamin" class="legal-link-soho">Regulamin</a>
+                            <a href="#cookies" class="legal-link-soho">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

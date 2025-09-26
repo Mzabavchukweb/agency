@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NONAME Studio — portfolio realizacji: branding, marketing cyfrowy i eventy.">
+    
+    <meta name="author" content="NONAME Studio">
+    <title>Realizacje — NONAME Studio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../soho-studio-styles.css?v=1.0.0">
+    
+    <script>
+        document.documentElement.className = 'js';
+    </script>
+</head>
+<body class="loading">
+    <!-- Unified Header -->
+    <header class="main-header">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <a href="../index.html" class="logo-link">
+                    <span class="logo-main">NONAME</span>
+                    <span class="logo-sub">studio</span>
+                </a>
+            </div>
+            
+            <nav class="header-navigation" role="navigation" aria-label="Nawigacja główna">
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-item">Home</a></li>
+                    <li><a href="realizacje.html" class="nav-item active" aria-current="page">Realizacje</a></li>
+                    <li><a href="poznaj-nas.html" class="nav-item">Poznaj nas</a></li>
+                    <li><a href="oferta.html" class="nav-item">Oferta</a></li>
+                    <li><a href="kontakt.html" class="nav-item">Kontakt</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="kontakt.html" class="cta-button">Rozpocznij projekt</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content - Creative Portfolio Showcase -->
+    <main id="app" role="main">
+    <!-- Portfolio Hero Section (rebuilt) -->
+    <section class="portfolio-hero">
+        <div class="portfolio-hero__inner">
+            <span class="portfolio-hero__eyebrow">Portfolio</span>
+            <h1 class="portfolio-hero__title">Poznaj nasze realizacje</h1>
+            <p class="portfolio-hero__subtitle">Prezentujemy efekty współpracy – bez sztucznej fasady, w zgodzie z tożsamością marek, które prowadzimy.</p>
+        </div>
+    </section>
+        
+        <!-- Portfolio Grid -->
+        <section class="portfolio-grid-section" aria-label="Portfolio">
+            <div class="portfolio-grid-intro">
+                <div class="portfolio-filters" role="tablist" aria-label="Filtruj portfolio">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Wszystkie</button>
+                    <button class="filter-btn" data-filter="image" role="tab" aria-selected="false">Zdjęcia</button>
+                    <button class="filter-btn" data-filter="video" role="tab" aria-selected="false">Filmy</button>
+                </div>
+            </div>
+            <div id="portfolioGrid" class="portfolio-grid" aria-live="polite"></div>
+            <!-- Lightbox -->
+            <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Podgląd projektu">
+                <button class="lightbox-btn lightbox-close" aria-label="Zamknij">×</button>
+                <button class="lightbox-btn lightbox-prev" aria-label="Poprzedni">‹</button>
+                <button class="lightbox-btn lightbox-next" aria-label="Następny">›</button>
+                <div class="lightbox-content" id="lightboxContent"></div>
+                <div class="lightbox-caption" id="lightboxCaption"></div>
+                <div class="lightbox-toolbar" id="lightboxToolbar" hidden>
+                    <button id="soundToggle" class="sound-toggle-icon" aria-label="Włącz dźwięk" title="Przełącz dźwięk">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path id="soundIconPath" d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Description -->
+        <section class="portfolio-description">
+            <div class="portfolio-description-container">
+                <p class="portfolio-grid-description">Każdy projekt to opowieść o marce, którą pomagamy ożywić. Od koncepcji po finalną realizację - tworzymy doświadczenia, które pozostają w pamięci.</p>
+                <a href="/pages/kontakt.html" class="btn-portfolio-intro">
+                    <span>Rozpocznij projekt</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Scripts -->
+    <script type="module" src="../assets/js/components.js?v=2.0.6"></script>
+    <script type="module" src="../assets/js/app.js?v=2.0.6"></script>
+    <script src="../assets/js/contact-form.js?v=2.0.6"></script>
+    <script src="../soho-animations.js?v=1.0.0"></script>
+    
+    <!-- Mobile Navigation handled by components.js:initHeader() -->
+    
+    <!-- Portfolio Grid & Lightbox Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Remove any legacy carousel markup from DOM if still present
+        const legacy = document.querySelector('.portfolio-carousels-section');
+        if (legacy) legacy.remove();
+        const grid = document.getElementById('portfolioGrid');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxContent = document.getElementById('lightboxContent');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+        const soundToggleBtn = document.getElementById('soundToggle');
+        const lightboxToolbar = document.getElementById('lightboxToolbar');
+        const prevBtn = document.querySelector('.lightbox-prev');
+        const nextBtn = document.querySelector('.lightbox-next');
+        const closeBtn = document.querySelector('.lightbox-close');
+
+        const assets = [
+            "1.PNG","1717767455.07897.jpg","1cf888cb6c6a492f8f8370794b03e8da.MOV","1da66410d23b4fecb26e8a3023ef1b3b.MOV",
+            "20250731_1150_Hiperrealizm Perfum Channel_simple_compose_01k1fy4hwxevwtap6cgb5pmktr.png",
+            "20250909_1803_Sushi Bag Aesthetic_remix_01k4qkbsmnettbxtykqq6g4cs6.PNG",
+            "28377736-DF2C-4EDF-9581-FC415B7FF202.JPG","4.PNG","481a370b5e3749d1ae4439e183cb0371.MOV",
+            "498D41F7-DE89-47C7-A644-D1ADC13A538A.JPG","5 2.PNG","53f82358a7764683a519a9895aa736db.MOV",
+            "78908f6894644d3ea1d92c2d131793d2.MOV","905b6af94d6c437dba58d0f529c4eeed.MOV",
+            "C5FCD5AA-C107-4DB8-9F7C-DE47A8F4A631.JPG","copy_1A064405-3F7E-439A-8D9E-CA21E17BFBB9.mov",
+            "copy_2C5FDC94-C460-4935-AE13-D49DAB11DD83.mov","copy_3757AE64-86AA-49A2-8F30-3C901664A21D.mov",
+            "copy_46B3EE84-E031-4D9F-8228-68503A4FA2F0.mov","copy_57F0387F-8D77-40B8-92EC-7D899A30098F.mov",
+            "copy_9E0EDBF6-B319-4A78-8D89-0A4C0DB09E5C.MOV","d04aa42505f045b7859d84033b6ae279.MOV",
+            "D2A80804-F465-44BF-8598-1E9D198EE933.JPG","drinki 2.MOV","DSC_6638.jpg","DSC_6762.heic",
+            "DSC00044.JPG","DSC00067.JPG","DSC00078.JPG","DSC00098.JPG","facd7dae2bb643bba58831f0cfdf9879.MOV",
+            "Fashion Brand Guidelines Presentation.PNG","fff98da42d094283bf83e06102989a0e.MOV",
+            "halloween promocja pion.MP4","halloween zapowiedz.mp4","IMG_5536 2.jpg","IMG_6007.jpg","IMG_6015.jpg",
+            "IMG_6019.jpg","IMG_6036.jpg","IMG_6041.jpg","IMG_6061.jpg","IMG_6085.jpg","IMG_6087.jpg",
+            "IMG_6091.jpg","IMG_6104.jpg","IMG_6105.jpg","IMG_6116.jpg","IMG_6120.jpg","IMG_6123.jpg",
+            "IMG_6126.jpg","IMG_6131.jpg","IMG_6138.jpg","IMG_6144.jpg","IMG_6148.jpg","IMG_6151.jpg",
+            "Jesienna paleta kolorów - grafika.1.PNG","Jesienna paleta kolorów - grafika.PNG",
+            "Jesienna paleta kolorów grafika 3.PNG","pluszaki.mov","posejdon 24.02.2025 2.MP4","Rodzaje Sushi.MOV",
+            "szklana_dzungla.mov","v24044gl0000d1jc5dvog65u0vmhad80.mov","you too final.MOV",
+            "Zapowiedź nowy sznurek - grafika .PNG","Zrzut ekranu 2025-09-25 o 21.44.20.png",
+            "Zrzut ekranu 2025-09-25 o 21.46.01.png","Zrzut ekranu 2025-09-25 o 21.46.10.png"
+        ];
+
+        const isVideo = (name) => /\.(mov|mp4)$/i.test(name);
+        const isHeic = (name) => /\.(heic|heif)$/i.test(name);
+        const isImage = (name) => /\.(png|jpe?g|webp|gif)$/i.test(name);
+        const encoded = (name) => encodeURIComponent(name).replace(/%20/g, '%20');
+
+        // Render grid
+        const fragments = document.createDocumentFragment();
+        assets.forEach((name, idx) => {
+            const item = document.createElement('button');
+            item.className = 'grid-item';
+            item.type = 'button';
+            item.setAttribute('data-index', String(idx));
+            item.setAttribute('tabindex', '0');
+            const url = `../NONAME%20portfolio/${encoded(name)}`;
+            if (isVideo(name)) {
+                item.dataset.type = 'video';
+                item.innerHTML = `<div class="thumb-video-wrap"><video src="${url}" muted playsinline loop preload="metadata"></video><button class="thumb-sound" aria-label="Przełącz dźwięk" title="Przełącz dźwięk"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg></button></div>`;
+            } else {
+                item.dataset.type = 'image';
+                item.innerHTML = `<img src="${url}" alt="${name}" loading="lazy" decoding="async">`;
+            }
+            fragments.appendChild(item);
+        });
+        grid.appendChild(fragments);
+
+        let currentIndex = -1;
+        let currentVideo = null;
+
+        // Filtering
+        const filterBar = document.querySelector('.portfolio-filters');
+        if (filterBar) {
+            filterBar.addEventListener('click', (e) => {
+                const btn = e.target.closest('.filter-btn');
+                if (!btn) return;
+                const filter = btn.getAttribute('data-filter');
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.toggle('active', b === btn);
+                    b.setAttribute('aria-selected', String(b === btn));
+                });
+                grid.querySelectorAll('.grid-item').forEach(el => {
+                    const type = el.dataset.type;
+                    const show = filter === 'all' || type === filter;
+                    el.style.display = show ? 'inline-block' : 'none';
+                });
+            });
+        }
+
+        // Pause grid videos offscreen and bind thumb sound toggles
+        const gridVideos = grid.querySelectorAll('video');
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(({ isIntersecting, target }) => {
+                if (isIntersecting) target.play(); else target.pause();
+            });
+        }, { threshold: 0.25 });
+        gridVideos.forEach(v => io.observe(v));
+
+        grid.addEventListener('click', (e) => {
+            const btn = e.target.closest('.thumb-sound');
+            if (!btn) return;
+            const wrap = btn.closest('.thumb-video-wrap');
+            const v = wrap ? wrap.querySelector('video') : null;
+            if (!v) return;
+            e.preventDefault();
+            e.stopPropagation();
+            v.muted = !v.muted;
+            // update icon inside thumb
+            const path = btn.querySelector('path');
+            if (path) {
+                if (!v.muted) {
+                    path.setAttribute('d', 'M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z');
+                } else {
+                    path.setAttribute('d', 'M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z');
+                }
+            }
+        });
+
+        function openLightbox(index) {
+            currentIndex = index;
+            const name = assets[index];
+            const url = `../NONAME%20portfolio/${encoded(name)}`;
+            lightboxContent.innerHTML = '';
+            lightboxCaption.textContent = name;
+            lightbox.setAttribute('aria-hidden', 'false');
+            lightbox.classList.add('open');
+
+            if (isVideo(name)) {
+                const video = document.createElement('video');
+                video.src = url;
+                video.controls = false;
+                video.autoplay = true;
+                video.loop = true;
+                video.muted = true;
+                video.playsInline = true;
+                video.className = 'lightbox-video';
+                lightboxContent.appendChild(video);
+                currentVideo = video;
+                lightboxToolbar.hidden = false;
+                updateSoundUi();
+            } else {
+                const img = document.createElement('img');
+                img.src = url;
+                img.alt = name;
+                img.className = 'lightbox-image';
+                lightboxContent.appendChild(img);
+                currentVideo = null;
+                lightboxToolbar.hidden = true;
+            }
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+            lightbox.setAttribute('aria-hidden', 'true');
+            lightboxContent.innerHTML = '';
+            lightboxCaption.textContent = '';
+            currentVideo = null;
+        }
+
+        function updateSoundUi() {
+            if (!currentVideo) return;
+            const on = !currentVideo.muted;
+            const path = document.getElementById('soundIconPath');
+            if (!path) return;
+            path.setAttribute('d', on
+                ? 'M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z'
+                : 'M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z');
+            soundToggleBtn.setAttribute('aria-label', on ? 'Wyłącz dźwięk' : 'Włącz dźwięk');
+            soundToggleBtn.setAttribute('title', on ? 'Wyłącz dźwięk' : 'Włącz dźwięk');
+        }
+
+        function showPrev() {
+            const next = (currentIndex - 1 + assets.length) % assets.length;
+            openLightbox(next);
+        }
+        function showNext() {
+            const next = (currentIndex + 1) % assets.length;
+            openLightbox(next);
+        }
+
+        grid.addEventListener('click', (e) => {
+            if (e.target.closest('.thumb-sound')) return; // do not open lightbox when toggling sound
+            const btn = e.target.closest('.grid-item');
+            if (!btn) return;
+            const index = Number(btn.getAttribute('data-index'));
+            openLightbox(index);
+        });
+        grid.addEventListener('keydown', (e) => {
+            if (e.key !== 'Enter') return;
+            const btn = e.target.closest('.grid-item');
+            if (!btn) return;
+            const index = Number(btn.getAttribute('data-index'));
+            openLightbox(index);
+        });
+        closeBtn.addEventListener('click', closeLightbox);
+        prevBtn.addEventListener('click', showPrev);
+        nextBtn.addEventListener('click', showNext);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('open')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') showPrev();
+            if (e.key === 'ArrowRight') showNext();
+        });
+        soundToggleBtn.addEventListener('click', () => {
+            if (!currentVideo) return;
+            currentVideo.muted = !currentVideo.muted;
+            updateSoundUi();
+        });
+    });
+    </script>
+    
+    
+    
+    <!-- Footer - Soho Studio Style -->
+    <footer class="footer-soho-studio" role="contentinfo">
+        <div class="footer-soho-studio-container">
+            <div class="footer-soho-studio-content">
+                <div class="footer-soho-studio-main">
+                    <div class="footer-logo-soho">
+                        <h3 class="footer-logo-main">NONAME</h3>
+                        <p class="footer-logo-sub">studio</p>
+                        <p class="footer-logo-description">
+                            Agencja kreatywna specjalizująca się w brandingu, marketingu cyfrowym oraz eventach.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-links-soho">
+                        <div class="footer-section-soho">
+                            <h4 class="footer-section-title">NAWIGACJA</h4>
+                            <ul class="footer-links-list">
+                                <li><a href="../index.html">Strona główna</a></li>
+                                <li><a href="realizacje.html">Realizacje</a></li>
+                                <li><a href="poznaj-nas.html">O nas</a></li>
+                                <li><a href="oferta.html">Oferta</a></li>
+                                <li><a href="kontakt.html">Kontakt</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section-soho">
+                            <h4 class="footer-section-title">USŁUGI</h4>
+                            <ul class="footer-links-list">
+                                <li><a href="oferta.html#branding">Branding</a></li>
+                                <li><a href="oferta.html#marketing">Marketing cyfrowy</a></li>
+                                <li><a href="oferta.html#eventy">Eventy</a></li>
+                                <li><a href="oferta.html#grafika">Grafika</a></li>
+                                <li><a href="oferta.html#social-media">Social Media</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-contact-soho">
+                        <h4 class="footer-section-title">KONTAKT</h4>
+                        <div class="footer-contact-info">
+                            <a href="mailto:hello@noname.agency" class="footer-contact-link" aria-label="Wyślij email">
+                                hello@noname.agency
+                            </a>
+                            <a href="tel:+48123456789" class="footer-contact-link" aria-label="Zadzwoń">
+                                +48 123 456 789
+                            </a>
+                            <div class="footer-contact-link">
+                                Warszawa, Polska
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-soho-studio-bottom">
+                    <div class="footer-bottom-content">
+                        <p class="footeropyright">&copy; 2025 NONAME Studio. Wszystkie prawa zastrzeżone.</p>
+                        <div class="footer-legal-soho">
+                            <a href="#polityka-prywatnosci" class="legal-link-soho">Polityka prywatności</a>
+                            <a href="#regulamin" class="legal-link-soho">Regulamin</a>
+                            <a href="#cookies" class="legal-link-soho">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
